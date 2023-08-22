@@ -427,7 +427,7 @@ class ModelConverter(ModelConverterBase):
     def conv_interval(
         self, model: type, prop: ColumnProperty, kwargs: Dict[str, Any]
     ) -> UnboundField:
-        kwargs["render_kw"]["placeholder"] = "Like: 1 day 1:25:33.652"
+        kwargs["render_kw"]["placeholder"] = "Например: 1:25:33.652"
         return IntervalField(**kwargs)
 
     @converts(
