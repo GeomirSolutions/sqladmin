@@ -873,9 +873,9 @@ class ModelView(BaseView, metaclass=ModelViewMeta):
         stmt = self.list_query
 
         for relation in self._list_relations:
-            stmt = stmt.join(relation, isouter=False)
-            stmt = stmt.options(contains_eager(relation))
-            # stmt = stmt.options(joinedload(relation))
+            # stmt = stmt.join(relation, isouter=True)
+            # stmt = stmt.options(contains_eager(relation))
+            stmt = stmt.options(joinedload(relation))
 
         if sort_by:
             sort_fields = [(sort_by, sort == "desc")]
