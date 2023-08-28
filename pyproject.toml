@@ -11,6 +11,8 @@ license = "BSD-3-Clause"
 keywords = ["sqlalchemy", "fastapi", "starlette", "admin"]
 authors = [
   { name = "Amin Alaee", email = "me@aminalaee.dev" },
+  { name = "Geomir Solutions", email = "info@geomir.ru" },
+  
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -36,9 +38,8 @@ dependencies = [
 dynamic = ["version"]
 
 [project.urls]
-Documentation = "https://aminalaee.dev/sqladmin"
-Issues = "https://github.com/aminalaee/sqladmin/issues"
-Source = "https://github.com/aminalaee/sqladmin"
+Issues = "https://github.com/GeomirSolutions/sqladmin/issues"
+Source = "https://github.com/GeomirSolutions/sqladmin"
 
 [tool.hatch.version]
 path = "sqladmin/__init__.py"
